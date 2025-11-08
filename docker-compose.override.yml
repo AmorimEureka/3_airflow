@@ -1,0 +1,13 @@
+services:
+  scheduler:
+    volumes:
+      - ./dbt/prj_dw:/usr/local/airflow/dbt/prj_dw
+  dag-processor:
+    volumes:
+      - ./dbt/prj_dw:/usr/local/airflow/dbt/prj_dw
+
+
+networks:
+  airflow:
+    external: true
+    name: airflow
