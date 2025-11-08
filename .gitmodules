@@ -1,0 +1,3 @@
+[submodule "dbt/2_dw"]
+	path = dbt/2_dw
+	url = https://github.com/AmorimEureka/2_dw
